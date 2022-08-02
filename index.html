@@ -1,99 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Blogr]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Product
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <section class="hero">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <img class="navbar-brand" src="images/logo.svg" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="" role="button"
+            ><i class="fa fa-bars" aria-hidden="true" style="color: #e6e6ff"></i
+          ></span>
+        </button>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Product
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown-Product"
+              >
+                <a class="dropdown-item" href="#">Overview</a>
+                <a class="dropdown-item" href="#">Pricing</a>
+                <a class="dropdown-item" href="#">Marketplace</a>
+                <a class="dropdown-item" href="#">Features</a>
+                <a class="dropdown-item" href="#">Integrations</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Company
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown-Company"
+              >
+                <a class="dropdown-item" href="#">About</a>
+                <a class="dropdown-item" href="#">Team</a>
+                <a class="dropdown-item" href="#">Blog</a>
+                <a class="dropdown-item" href="#">Careers</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Connect
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown-Connect"
+              >
+                <a class="dropdown-item" href="#">Contact</a>
+                <a class="dropdown-item" href="#">Newsletter</a>
+                <a class="dropdown-item" href="#">LinkedIn</a>
+              </div>
+            </li>
+          </ul>
+          <div class="form-inline">
+            <a class="nav-link" href="#">Login</a>
+            <button class="btn btn-signup btn-round">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+      <section class="hero-content">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <div class="hero-buttons">
+          <button class="free-button btn-round btn">Start for Free</button>
+          <button class="learn-button btn-round btn">Learn More</button>
+        </div>
+      </section>
+    </section>
+    <section class="main-content">
+      <h2 class="heading main-content-heading">Designed for the future</h2>
+      <section class="features-first">
+        <img
+          class="feature-image"
+          src="images/illustration-editor-mobile.svg"
+          alt=""
+        />
+        <div class="feature-one">
+          <h2 class="heading">Introducing an extensible editor</h2>
+          <p class="main-copy">
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+        </div>
+        <div class="feature-two">
+          <h2 class="heading">Robust content management</h2>
+          <p class="main-copy">
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
+        </div>
+      </section>
+      <div class="infrastructure">
+        <img
+          class="infrastructure-image"
+          src="images/illustration-phones.svg"
+          alt=""
+        />
 
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
-
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="infra-wrapper"></div>
+        <div class="infra-text">
+          <h2 class="heading-light heading infra-heading">
+            State of the Art Infrastructure
+          </h2>
+          <p class="main-copy main-copy-light">
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </div>
+      <section class="features-second">
+        <div class="feature-three">
+          <img
+            class="feature-image"
+            src="images/illustration-laptop-mobile.svg"
+            alt=""
+          />
+          <h2 class="heading">Free, open, simple</h2>
+          <p class="main-copy">
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+        </div>
+        <div class="feature-four">
+          <h2 class="heading">Powerful tooling</h2>
+          <p class="main-copy">
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="footer-logo">
+        <a href="#"><img src="images/logo.svg" alt="" /></a>
+      </div>
+      <div class="footer-elements-one">
+        <h5 class="footer-heading">Product</h5>
+        <ul>
+          <li>Overview</li>
+          <li>Pricing</li>
+          <li>Marketplace</li>
+          <li>Features</li>
+          <li>Integrations</li>
+        </ul>
+      </div>
+      <div class="footer-elements-one">
+        <h5 class="footer-heading">Company</h5>
+        <ul>
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Features</li>
+        </ul>
+      </div>
+      <div class="footer-elements-one">
+        <h5 class="footer-heading">Connect</h5>
+        <ul>
+          <li>Contact</li>
+          <li>Newsletter</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+    </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a color:white href="#">Fahrgast</a>.
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
