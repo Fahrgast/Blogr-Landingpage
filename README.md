@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP/hub/responsive-landingpage-using-css-grid-and-flexbox-e8_o7xrW2f
 - Live Site URL: https://fahrgast.github.io/Blogr-Landingpage/
 
 ### Built with
